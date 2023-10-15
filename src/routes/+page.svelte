@@ -27,8 +27,9 @@
 
 <nav
 	use:responsiveNav
-	class="bg-slate-800 mx-auto my-4 mb-12 flex justify-between items-center px-9 transition-all z-50
+	class="bg-slate-800 mx-auto my-4 mb-12 justify-between items-center px-9 transition-all z-50
 	{shouldSticky ? 'w-full sticky top-0 left-0' : 'container lg:max-w-screen-lg '}
+	flex flex-col pt-4 sm:flex-row
 	"
 >
 	<a href="/" class="brand">
@@ -52,8 +53,11 @@
 </nav>
 
 <main class="container lg:max-w-screen-lg mx-auto">
-	<section id="name" class="py-9 px-9 mb-12 bg-slate-800 flex items-center justify-between">
-		<div class="left">
+	<section
+		id="name"
+		class="py-9 px-9 mb-12 bg-slate-800 flex items-center justify-between flex-col-reverse sm:flex-row"
+	>
+		<div class="left text-center sm:text-left">
 			<div class="title uppercase mb-8 text-2xl tracking-widest">I AM MUHAMAD AIDIL</div>
 			<div
 				class="job text-7xl mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-600 max-w-fit font-extrabold"
@@ -69,14 +73,19 @@
 				Contact Me
 			</a>
 		</div>
-		<div class="right w-[40%] h-full flex items-center justify-center">
+		<div class="right mb-8 sm:mb-0 sm:w-[40%] h-full flex items-center justify-center">
 			<img src="/images/1.png" alt="Web Development" />
 		</div>
 	</section>
 
-	<section id="about" class="py-9 px-9 mb-12 bg-slate-800 flex items-center justify-between">
+	<section
+		id="about"
+		class="py-9 px-9 mb-12 bg-slate-800 flex items-center justify-between flex-col-reverse sm:flex-row"
+	>
 		<div class="left pr-4">
-			<div class="title uppercase mb-8 text-2xl tracking-wider text-blue-400 font-bold">
+			<div
+				class="title uppercase mb-8 text-2xl tracking-wider text-blue-400 font-bold text-center sm:text-left"
+			>
 				About Me
 			</div>
 			<h2 class="text-5xl font-extrabold mb-8 text-slate-50">I am a Web Developer</h2>
@@ -88,7 +97,7 @@
 			</p>
 		</div>
 		<div class="right min-w-[40%] h-full flex items-center justify-center">
-			<img src="/images/2.png" alt="Web Dev" />
+			<img src="/images/2.png" alt="Web Dev" class="mb-8 sm:mb-0" />
 		</div>
 	</section>
 
@@ -97,7 +106,7 @@
 		<h2 class="title uppercase text-center text-2xl tracking-wider text-blue-400 font-bold mb-8">
 			Porfolio
 		</h2>
-		<div class="projects grid grid-cols-3 justify-around gap-5 mx-auto">
+		<div class="projects grid grid-cols-2 sm:grid-cols-3 justify-around gap-5 mx-auto">
 			<div class="project rounded-md overflow-hidden relative group">
 				<a href="https://cari-kata.aidil.dev" target="_blank">
 					<img src="/images/cari-kata.png" class="h-full w-full object-cover" alt="Cari Kata" />
@@ -173,13 +182,18 @@
 		</div>
 	</section>
 
-	<section id="contact" class="px-9 py-9 mb-12 bg-slate-800 flex justify-between">
-		<div class="col w-[50%] pr-5">
-			<div class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8">
+	<section
+		id="contact"
+		class="px-9 py-9 mb-12 bg-slate-800 flex justify-between flex-col md:flex-row"
+	>
+		<div class="col w-full md:w-[50%] pr-5 text-center mb-8 md:mb-0">
+			<div
+				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
+			>
 				Contact Us
 			</div>
 			<h2 class="text-5xl font-extrabold text-teal-400 mb-8">Realize your dream with us</h2>
-			<div class="icons text-3xl flex items-center gap-5">
+			<div class="icons text-3xl flex items-center gap-5 justify-center">
 				<a href="https://facebook.com/muhd.aidils.7" target="_blank">
 					<i class="ph-duotone ph-facebook-logo text-blue-500" />
 				</a>
@@ -188,8 +202,8 @@
 				</a>
 			</div>
 		</div>
-		<div class="col pl-5 w-4/5">
-			<form class="w-[400px] max-w-full mx-auto">
+		<div class="col pl-5 md:w-4/5">
+			<form class="w-full md:w-[400px] max-w-full mx-auto">
 				<div class="relative z-0 mb-8">
 					<input
 						type="text"
