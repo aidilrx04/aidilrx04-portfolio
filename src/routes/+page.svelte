@@ -29,7 +29,7 @@
 	use:responsiveNav
 	class="bg-slate-800 mx-auto my-4 mb-12 justify-between items-center px-9 transition-all z-50
 	{shouldSticky ? 'w-full sticky top-0 left-0' : 'container lg:max-w-screen-lg '}
-	flex flex-col pt-4 sm:flex-row
+	flex flex-col pt-4 sm:pt-0 sm:flex-row
 	"
 >
 	<a href="/" class="brand">
