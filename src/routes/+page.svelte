@@ -144,6 +144,9 @@
 				<a href="https://github.com/aidilrx04" target="_blank">
 					<i class="ph-duotone ph-github-logo" />
 				</a>
+				<a href="www.linkedin.com/in/aidilrx04" target="_blank">
+					<i class="ph-duotone ph-linkedin-logo text-white bg-blue-500 rounded-sm" />
+				</a>
 			</div>
 		</div>
 		<div class="col pl-5 md:w-4/5">
