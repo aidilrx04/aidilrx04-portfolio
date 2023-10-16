@@ -41,9 +41,12 @@
 	</a>
 	<div class="dropdown bg-inherit group">
 		<button
-			class="peer md:hidden w-full px-3 py-1 border-2 border-slate-700 rounded-lg my-4 flex items-center justify-center"
+			class="peer md:hidden w-full px-3 py-1 border-2 border-slate-700 rounded-lg my-4 flex items-center justify-center transition-all
+                    active:text-blue-500 active:border-blue-500 focus:text-blue-500 focus:border-blue-500 focus-within:text-blue-500 focus-within:border-blue-500
+                    group-active:text-blue-500 group-active:border-blue-500 group-focus:text-blue-500 group-focus:border-blue-500 group-focus-within:text-blue-500 group-focus-within:border-blue-500
+            "
 		>
-			<i class="ph ph-list text-3xl text-slate-50" />
+			<i class="ph ph-list text-3xl text-inherit" />
 		</button>
 		<!-- TODO: fix the navbar transition when dropdown is open -->
 		<div
