@@ -1,4 +1,5 @@
 <script>
+	import ContactForm from '$lib/components/ContactForm.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Section from '$lib/components/Section.svelte';
 </script>
@@ -150,40 +151,7 @@
 			</div>
 		</div>
 		<div class="col pl-5 md:w-4/5">
-			<form class="w-full md:w-[400px] max-w-full mx-auto">
-				<div class="relative z-0 mb-8">
-					<input
-						type="text"
-						id="floating_standard"
-						class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-teal-500 focus:outline-none focus:ring-0 focus:border-teal-600 peer"
-						placeholder=" "
-					/>
-					<label
-						for="floating_standard"
-						class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-teal-600 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-					>
-						Name
-					</label>
-				</div>
-
-				<div class="relative z-0 mb-8">
-					<textarea
-						id="floating_standard"
-						class="block min-h-[100px] py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-teal-500 focus:outline-none focus:ring-0 focus:border-teal-600 peer"
-						placeholder=" "
-					/>
-					<label
-						for="floating_standard"
-						class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-teal-600 peer-focus:dark:text-teal-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-					>
-						Message
-					</label>
-				</div>
-
-				<div class="mb-8">
-					<button class="block w-full px-4 py-4 font-semibold bg-blue-600"> Send </button>
-				</div>
-			</form>
+			<ContactForm />
 		</div>
 	</Section>
 </main>
@@ -202,7 +170,7 @@
 	}
 
 	:global(*) {
-		color: white;
+		@apply text-slate-50;
 	}
 
 	@keyframes titles {
