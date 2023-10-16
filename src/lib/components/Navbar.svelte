@@ -82,7 +82,7 @@
 
 <style lang="postcss">
 	.nav-item {
-		@apply block  py-4 uppercase text-lg tracking-wider transition-all px-9;
+		@apply block  py-4 uppercase text-lg tracking-wider transition-all duration-300 px-9;
 	}
 
 	@media screen(md) {
