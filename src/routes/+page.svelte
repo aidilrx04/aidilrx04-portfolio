@@ -135,9 +135,9 @@
 			<div
 				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
 			>
-				Contact Us
+				Contact Me
 			</div>
-			<h2 class="text-5xl font-extrabold text-teal-400 mb-8">Realize your dream with us</h2>
+			<h2 class="text-5xl font-extrabold text-teal-400 mb-8">Realize your dream with me</h2>
 			<div class="icons text-3xl flex items-center md:justify-start gap-5 justify-center">
 				<a href="https://facebook.com/muhd.aidils.7" target="_blank">
 					<i class="ph-duotone ph-facebook-logo text-blue-500" />
