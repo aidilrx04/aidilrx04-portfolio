@@ -30,12 +30,19 @@
 			.then(() => {
 				isMessageSent = true;
 				isSendingMessage = false;
+				clearInputs();
 			})
 			.catch((err) => {
 				isMessageSent = false;
 				errorMessage = err?.message || 'Unknown error';
 				isSendingMessage = false;
 			});
+	};
+
+	const clearInputs = () => {
+		name = '';
+		email = '';
+		message = '';
 	};
 </script>
 
