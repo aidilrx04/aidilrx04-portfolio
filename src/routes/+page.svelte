@@ -54,7 +54,9 @@
 		<h2 class="title uppercase text-center text-2xl tracking-wider text-blue-400 font-bold mb-8">
 			Porfolio
 		</h2>
-		<div class="projects grid grid-cols-2 sm:grid-cols-3 justify-around gap-5 mx-auto">
+		<div
+			class="projects grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-around gap-5 mx-auto"
+		>
 			<div class="project rounded-md overflow-hidden relative group">
 				<a href="https://cari-kata.aidil.dev" target="_blank">
 					<img src="/images/cari-kata.png" class="h-full w-full object-cover" alt="Cari Kata" />
