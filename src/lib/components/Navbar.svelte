@@ -50,7 +50,7 @@
 		</button>
 		<!-- TODO: fix the navbar transition when dropdown is open -->
 		<div
-			class="max-h-0 h-auto md:max-h-full md:static md:block hidden dropdown-content absolute bg-inherit w-full left-0 top-full
+			class="max-h-0 h-auto md:max-h-full shadow-md shadow-slate-900 md:shadow-none md:static md:block hidden dropdown-content absolute bg-inherit w-full left-0 top-full
             peer-active:block
             peer-focus:block
             peer-focus-within:block
