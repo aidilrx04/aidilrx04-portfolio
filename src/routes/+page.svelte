@@ -131,14 +131,14 @@
 	</Section>
 
 	<Section id="contact" class="flex justify-between flex-col md:flex-row">
-		<div class="col w-full md:w-[50%] pr-5 text-center mb-8 md:mb-0">
+		<div class="col w-full md:w-[50%] pr-5 text-center md:text-left mb-8 md:mb-0">
 			<div
 				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
 			>
 				Contact Us
 			</div>
 			<h2 class="text-5xl font-extrabold text-teal-400 mb-8">Realize your dream with us</h2>
-			<div class="icons text-3xl flex items-center gap-5 justify-center">
+			<div class="icons text-3xl flex items-center md:justify-start gap-5 justify-center">
 				<a href="https://facebook.com/muhd.aidils.7" target="_blank">
 					<i class="ph-duotone ph-facebook-logo text-blue-500" />
 				</a>
