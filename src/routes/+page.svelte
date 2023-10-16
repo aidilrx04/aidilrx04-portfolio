@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Section from '$lib/components/Section.svelte';
+
 	let shouldSticky = false;
 	let el: HTMLElement;
 	let box: DOMRect;
@@ -53,10 +55,7 @@
 </nav>
 
 <main class="container lg:max-w-screen-lg mx-auto">
-	<section
-		id="name"
-		class="py-9 px-9 mb-12 bg-slate-800 flex items-center justify-between flex-col-reverse sm:flex-row"
-	>
+	<Section id="name" class="flex items-center justify-between flex-col-reverse sm:flex-row">
 		<div class="left text-center sm:text-left">
 			<div class="title uppercase mb-8 text-2xl tracking-widest">I AM MUHAMAD AIDIL</div>
 			<div
@@ -76,12 +75,9 @@
 		<div class="right mb-8 sm:mb-0 sm:w-[40%] h-full flex items-center justify-center">
 			<img src="/images/1.png" alt="Web Development" />
 		</div>
-	</section>
+	</Section>
 
-	<section
-		id="about"
-		class="py-9 px-9 mb-12 bg-slate-800 flex items-center justify-between flex-col-reverse sm:flex-row"
-	>
+	<Section id="about" class="flex items-center justify-between flex-col-reverse sm:flex-row">
 		<div class="left pr-4">
 			<div
 				class="title uppercase mb-8 text-2xl tracking-wider text-blue-400 font-bold text-center sm:text-left"
@@ -99,10 +95,10 @@
 		<div class="right min-w-[40%] h-full flex items-center justify-center">
 			<img src="/images/2.png" alt="Web Dev" class="mb-8 sm:mb-0" />
 		</div>
-	</section>
+	</Section>
 
 	<!-- <div id="resume"></div> -->
-	<section id="porfolio" class="px-9 py-9 mb-12 bg-slate-800">
+	<Section id="porfolio">
 		<h2 class="title uppercase text-center text-2xl tracking-wider text-blue-400 font-bold mb-8">
 			Porfolio
 		</h2>
@@ -180,12 +176,9 @@
 				</a>
 			</div>
 		</div>
-	</section>
+	</Section>
 
-	<section
-		id="contact"
-		class="px-9 py-9 mb-12 bg-slate-800 flex justify-between flex-col md:flex-row"
-	>
+	<Section id="contact" class="flex justify-between flex-col md:flex-row">
 		<div class="col w-full md:w-[50%] pr-5 text-center mb-8 md:mb-0">
 			<div
 				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
@@ -238,7 +231,7 @@
 				</div>
 			</form>
 		</div>
-	</section>
+	</Section>
 </main>
 
 <footer class="container lg:max-w-screen-lg mx-auto px-9 py-5 bg-slate-800">
