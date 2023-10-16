@@ -1,7 +1,4 @@
 <script lang="ts">
-	import Navbar from '$lib/components/Navbar.svelte';
-	import Section from '$lib/components/Section.svelte';
-
 	let shouldSticky = false;
 	let el: HTMLElement;
 	let box: DOMRect;
