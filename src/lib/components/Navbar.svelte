@@ -28,7 +28,7 @@
 <nav
 	use:responsiveNav
 	class="bg-slate-800 mx-auto my-4 mb-12 justify-between items-center px-9 transition-all z-50 sticky top-0 left-0
-	{shouldSticky ? 'w-full' : 'container lg:max-w-screen-lg '}
+	{shouldSticky ? 'w-full shadow-md shadow-slate-900' : 'container lg:max-w-screen-lg '}
 	flex relative
 	"
 >
