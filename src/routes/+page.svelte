@@ -133,7 +133,7 @@
 	</Section>
 
 	<Section id="contact" class="flex justify-between flex-col md:flex-row">
-		<div class="col w-full md:w-[50%] pr-5 text-center md:text-left mb-8 md:mb-0">
+		<div class="col w-full md:w-[50%] pr-0 md:pr-5 text-center md:text-left mb-8 md:mb-0">
 			<div
 				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
 			>
@@ -152,7 +152,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col pl-5 md:w-4/5">
+		<div class="col pl-0 md:pl-5 md:w-4/5">
 			<ContactForm />
 		</div>
 	</Section>
