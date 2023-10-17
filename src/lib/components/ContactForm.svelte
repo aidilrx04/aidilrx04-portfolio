@@ -116,7 +116,7 @@
 		<button
 			disabled={isSendingMessage}
 			type="submit"
-			class="flex items-center justify-center w-full px-4 py-4 font-semibold bg-blue-600 disabled:bg-blue-800 disabled:text-slate-300 hover:bg-blue-500 active:bg-blue-700"
+			class="flex items-center justify-center w-full px-4 py-4 font-semibold text-slate-50 bg-blue-600 disabled:bg-blue-800 disabled:text-slate-300 hover:bg-blue-500 active:bg-blue-700"
 		>
 			{#if isSendingMessage}
 				<i class="ph-bold ph-spinner animate-spin text-lg mr-2 inline-block" />
