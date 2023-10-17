@@ -1,27 +1,29 @@
-<script>
-	import { browser } from '$app/environment';
+<script lang="ts">
+	import { darkMode } from '$lib/color-scheme';
 	import '../app.css';
 
-	export let darkMode = false;
+	let darkEl: HTMLBodyElement;
 
-	$: if (browser) {
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			darkMode = true;
-		}
-	}
+	$: if (darkEl) darkEl.classList.toggle('dark', $darkMode);
 
-	$: if (browser) document.body.classList.toggle('dark', darkMode);
+	const initDarkMode = (el: HTMLDivElement) => {};
+
+	const balls = (el: HTMLBodyElement) => {
+		console.log('balls');
+		darkEl = el;
+	};
 </script>
+
+<svelte:body use:balls />
 
 <slot><!-- optional fallback --></slot>
 
 <style>
+	:global(body) {
+		@apply bg-slate-200 text-slate-800;
+	}
 	:global(body.dark) {
 		/* @apply bg-gradient-to-r from-slate-800 to-slate-900; */
 		@apply bg-slate-900 text-slate-50;
-	}
-
-	:global(body) {
-		@apply bg-slate-200 text-slate-800;
 	}
 </style>
