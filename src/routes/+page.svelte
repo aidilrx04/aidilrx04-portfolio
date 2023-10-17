@@ -54,7 +54,9 @@
 		<h2 class="title uppercase text-center text-2xl tracking-wider text-blue-400 font-bold mb-8">
 			Porfolio
 		</h2>
-		<div class="projects grid grid-cols-2 sm:grid-cols-3 justify-around gap-5 mx-auto">
+		<div
+			class="projects grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-around gap-5 mx-auto"
+		>
 			<div class="project rounded-md overflow-hidden relative group">
 				<a href="https://cari-kata.aidil.dev" target="_blank">
 					<img src="/images/cari-kata.png" class="h-full w-full object-cover" alt="Cari Kata" />
@@ -131,7 +133,7 @@
 	</Section>
 
 	<Section id="contact" class="flex justify-between flex-col md:flex-row">
-		<div class="col w-full md:w-[50%] pr-5 text-center md:text-left mb-8 md:mb-0">
+		<div class="col w-full md:w-[50%] pr-0 md:pr-5 text-center md:text-left mb-8 md:mb-0">
 			<div
 				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
 			>
@@ -150,7 +152,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="col pl-5 md:w-4/5">
+		<div class="col pl-0 md:pl-5 md:w-4/5">
 			<ContactForm />
 		</div>
 	</Section>
