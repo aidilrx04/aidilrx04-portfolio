@@ -39,7 +39,7 @@
 			Aidil.dev
 		</h1>
 	</a>
-	<div class="bg-inherit flex">
+	<div class="bg-inherit flex gap-4 flex-row-reverse md:flex-row">
 		<div class="dropdown bg-inherit group">
 			<button
 				class="peer md:hidden w-full px-3 py-1 text-slate-600 border-2 border-slate-400 dark:border-slate-700 rounded-lg my-4 flex items-center justify-center
