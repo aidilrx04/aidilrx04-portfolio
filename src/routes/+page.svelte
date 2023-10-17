@@ -166,14 +166,6 @@
 	:global(html) {
 		scroll-behavior: smooth;
 	}
-	:global(body) {
-		/* @apply bg-gradient-to-r from-slate-800 to-slate-900; */
-		@apply bg-slate-900;
-	}
-
-	:global(*) {
-		@apply text-slate-50;
-	}
 
 	@keyframes titles {
 		from {
