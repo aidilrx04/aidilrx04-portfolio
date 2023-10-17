@@ -9,7 +9,9 @@
 <main class="container lg:max-w-screen-lg mx-auto">
 	<Section id="name" class="flex items-center justify-between flex-col-reverse sm:flex-row">
 		<div class="left text-center sm:text-left">
-			<div class="title uppercase mb-8 text-2xl tracking-widest">I AM MUHAMAD AIDIL</div>
+			<div class="title uppercase mb-8 text-2xl tracking-widest text-slate-700 dark:text-slate-50">
+				I AM MUHAMAD AIDIL
+			</div>
 			<div
 				class="job text-7xl mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-600 max-w-fit font-extrabold"
 			>
@@ -32,12 +34,14 @@
 	<Section id="about" class="flex items-center justify-between flex-col-reverse sm:flex-row">
 		<div class="left pr-4">
 			<div
-				class="title uppercase mb-8 text-2xl tracking-wider text-blue-400 font-bold text-center sm:text-left"
+				class="title uppercase mb-8 text-2xl tracking-wider text-blue-600 dark:text-blue-400 font-bold text-center sm:text-left"
 			>
 				About Me
 			</div>
-			<h2 class="text-5xl font-extrabold mb-8 text-slate-50">I am a Web Developer</h2>
-			<p class="text-base text-slate-300">
+			<h2 class="text-5xl font-extrabold mb-8 text-teal-500 dark:text-slate-50">
+				I am a Web Developer
+			</h2>
+			<p class="text-base text-slate-700 dark:text-slate-300">
 				I'm a passionate web developer with a strong commitment to creating user-friendly websites
 				and applications. With expertise in HTML, CSS, JavaScript, and web frameworks, I excel at
 				transforming ideas into elegant digital experiences. My focus on both aesthetics and
@@ -51,7 +55,9 @@
 
 	<!-- <div id="resume"></div> -->
 	<Section id="porfolio">
-		<h2 class="title uppercase text-center text-2xl tracking-wider text-blue-400 font-bold mb-8">
+		<h2
+			class="title uppercase text-center text-2xl tracking-wider text-blue-600 dark:text-blue-400 font-bold mb-8"
+		>
 			Porfolio
 		</h2>
 		<div
@@ -66,7 +72,7 @@
 					<div class="caption absolute z-20 left-8 bottom-8 right-8">
 						<div class="title w-full relative overflow-hidden">
 							<h4
-								class="delay-[750ms] opacity-0 duration-100 group-hover:opacity-100 text-2xl transition-all font-semibold
+								class="text-slate-50 delay-[750ms] opacity-0 duration-100 group-hover:opacity-100 text-2xl transition-all font-semibold
                                 "
 							>
 								Cari Kata
@@ -74,7 +80,7 @@
 						</div>
 						<div class="subtitle w-fit relative overflow-hidden">
 							<span
-								class="text-sm delay-700 opacity-0 duration-100 group-hover:opacity-100 transition-all"
+								class="text-slate-100 text-sm delay-700 opacity-0 duration-100 group-hover:opacity-100 transition-all"
 								>Wordsearch Game</span
 							>
 						</div>
@@ -90,7 +96,7 @@
 					<div class="caption absolute z-20 left-8 bottom-8 right-8">
 						<div class="title w-full relative overflow-hidden">
 							<h4
-								class="delay-[750ms] opacity-0 duration-100 group-hover:opacity-100 text-2xl transition-all font-semibold
+								class="text-slate-50 delay-[750ms] opacity-0 duration-100 group-hover:opacity-100 text-2xl transition-all font-semibold
                                 "
 							>
 								Ladle
@@ -98,7 +104,7 @@
 						</div>
 						<div class="subtitle w-fit relative overflow-hidden">
 							<span
-								class="text-sm delay-700 opacity-0 duration-100 group-hover:opacity-100 transition-all"
+								class="text-slate-100 text-sm delay-700 opacity-0 duration-100 group-hover:opacity-100 transition-all"
 								>Wordle-like Game</span
 							>
 						</div>
@@ -114,7 +120,7 @@
 					<div class="caption absolute z-20 left-8 bottom-8 right-8">
 						<div class="title w-full relative overflow-hidden">
 							<h4
-								class="delay-[750ms] opacity-0 duration-100 group-hover:opacity-100 text-2xl transition-all font-semibold
+								class="text-slate-50 delay-[750ms] opacity-0 duration-100 group-hover:opacity-100 text-2xl transition-all font-semibold
                                 "
 							>
 								duitGone
@@ -122,7 +128,7 @@
 						</div>
 						<div class="subtitle w-fit relative overflow-hidden">
 							<span
-								class="text-sm delay-700 opacity-0 duration-100 group-hover:opacity-100 transition-all"
+								class="text-slate-100 text-sm delay-700 opacity-0 duration-100 group-hover:opacity-100 transition-all"
 								>A simple finance manager</span
 							>
 						</div>
@@ -135,7 +141,7 @@
 	<Section id="contact" class="flex justify-between flex-col md:flex-row">
 		<div class="col w-full md:w-[50%] pr-0 md:pr-5 text-center md:text-left mb-8 md:mb-0">
 			<div
-				class="title uppercase text-2xl tracking-wider text-blue-400 font-bold mb-8 text-center md:text-left"
+				class="title uppercase text-2xl tracking-wider text-blue-600 dark:text-blue-400 font-bold mb-8 text-center md:text-left"
 			>
 				Contact Me
 			</div>
@@ -147,7 +153,7 @@
 				<a href="https://github.com/aidilrx04" target="_blank">
 					<i class="ph-duotone ph-github-logo" />
 				</a>
-				<a href="www.linkedin.com/in/aidilrx04" target="_blank">
+				<a href="https://www.linkedin.com/in/aidilrx04" target="_blank">
 					<i class="ph-duotone ph-linkedin-logo text-white bg-blue-500 rounded-sm" />
 				</a>
 			</div>
@@ -158,9 +164,11 @@
 	</Section>
 </main>
 
-<footer class="container lg:max-w-screen-lg mx-auto px-9 py-5 bg-slate-800">
-	Copyright &copy; <span>aidil.dev</span> 2023
-</footer>
+<Section class="container lg:max-w-screen-lg mx-auto mb-0">
+	<footer>
+		Copyright &copy; <span>aidil.dev</span> 2023
+	</footer>
+</Section>
 
 <style lang="postcss">
 	:global(html) {
