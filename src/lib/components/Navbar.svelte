@@ -19,8 +19,6 @@
 			shouldSticky = false;
 		}
 	};
-
-	$: console.log(shouldSticky);
 </script>
 
 <svelte:window on:scroll={watchScroll} />
