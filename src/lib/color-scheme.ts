@@ -7,14 +7,17 @@ if (browser) {
 	console.log('runned');
 
 	const mode =
-		Boolean(localStorage.getItem('darkMode')) ||
-		window.matchMedia('(prefers-color-scheme: dark)').matches;
+		(localStorage.getItem('darkMode')
+			? localStorage.getItem('darkMode') === 'dark'
+				? true
+				: false
+			: false) || window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 	darkMode.set(mode);
 }
 
 darkMode.subscribe((value) => {
 	if (browser) {
-		localStorage.setItem('darkMode', value ? '1' : '');
+		localStorage.setItem('darkMode', value ? 'dark' : 'light');
 	}
 });
