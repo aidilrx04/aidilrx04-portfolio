@@ -2,6 +2,8 @@
 	import ContactForm from '$lib/components/ContactForm.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Section from '$lib/components/Section.svelte';
+
+	const year = new Date().getFullYear();
 </script>
 
 <Navbar />
@@ -166,7 +168,8 @@
 
 <Section class="container lg:max-w-screen-lg mx-auto mb-0">
 	<footer>
-		Copyright &copy; <span>aidil.dev</span> 2023
+		Copyright &copy; <span>aidil.dev</span>
+		{year}
 	</footer>
 </Section>
 
